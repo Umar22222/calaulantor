@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>simple  calculantor</h1>
+    <form name="calculantor"> 
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="displey" id="displey"  disabled placeholder="0">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" name="seven" value="7" onclick="calculantor.displey.value += '7'"></td>
+                <td><input type="button" name="eight" value="8" onclick="calculantor.displey.value += '8'"></td>
+                <td><input type="button" name="nine" value="9" onclick="calculantor.displey.value += '9'"></td>
+                <td><input type="button" name="times" class="operator" value="x" onclick="calculantor.displey.value += '*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="four" value="4" onclick="calculantor.displey.value += '4'"></td>
+                <td><input type="button" name="five" value="5" onclick="calculantor.displey.value += '5'"></td>
+                <td><input type="button" name="six" value="6" onclick="calculantor.displey.value += '6'"></td>
+                <td><input type="button" name="minus" class="operator" value="-" onclick="calculantor.displey.value += '-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="one" value="1" onclick="calculantor.displey.value += '1'"></td>
+                <td><input type="button" name="two" value="2" onclick="calculantor.displey.value += '2'"></td>
+                <td><input type="button" name="three" value="3" onclick="calculantor.displey.value += '3'"></td>
+                <td><input type="button" name="plus" class="operator" value="+" onclick="calculantor.displey.value += '+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="clear" value="c" onclick="calculantor.displey.value = ''"></td>
+                <td><input type="button" name="zero" value="0" onclick="calculantor.displey.value += '0'"></td>
+                <td><input type="button" name="doit" value="=" onclick="calculantor.displey.value = eval(calculantor.displey.value)"></td>
+                <td><input type="button" name="div" class="operator" value="/" onclick="calculantor.displey.value += '/'"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
